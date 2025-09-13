@@ -1,0 +1,38 @@
+html { scroll-behavior: smooth; }
+body { font-family: system-ui, sans-serif; }
+/* Paleta: azul, branco, cinza */
+:root {
+  --primary:#1d4ed8; /* azul principal */
+  --primary-light:#3b82f6;
+  --bg:#f8fafc; /* quase branco */
+  --text:#1f2937; /* cinza escuro */
+  --muted:#64748b; /* cinza médio */
+}
+
+.fade-in { opacity:0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+.fade-in.visible { opacity:1; transform: translateY(0); }
+
+.nav-active { display:block !important; }
+
+.btn-base { transition: background-color .25s ease, color .25s ease, transform .25s ease; }
+.btn-base:hover { transform: translateY(-2px); }
+.btn-primary { background: var(--primary); color:#fff; }
+.btn-primary:hover { background: var(--primary-light); }
+
+.card-skill { transition: box-shadow .25s ease, transform .25s ease; }
+.card-skill:hover { box-shadow: 0 8px 24px -8px rgba(0,0,0,0.25); transform: translateY(-4px); }
+
+header { backdrop-filter: blur(6px); }
+
+/* Botão hambúrguer estados */
+#btnMenu { transition: color .25s ease, background-color .25s ease; }
+#btnMenu[data-icon-state="closed"] { color: var(--primary); }
+#btnMenu[data-icon-state="open"] { color: var(--primary-light); }
+
+/* Mobile menu overlay (progressivo) */
+#mobileMenu { display:none; }
+@media (max-width: 767px) {
+  #mobileMenu { background:rgba(255,255,255,0.95); position:fixed; top:64px; left:0; right:0; padding:1rem 1.25rem 2rem; box-shadow:0 4px 16px -4px rgba(0,0,0,.15); }
+  #mobileMenu a { display:block; padding:.75rem 0; border-bottom:1px solid #e2e8f0; }
+  #mobileMenu a:last-child { border-bottom:none; }
+}

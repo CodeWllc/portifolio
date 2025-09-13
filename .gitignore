@@ -1,0 +1,90 @@
+# Dependências (não usadas aqui, mas futuro)
+node_modules/
+
+# SO / Editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Build / Cache
+.dist
+.cache
+
+# Arquivos temporários
+*.swp
+*.tmp
+~$*
+############################
+# Git Ignore - Portfólio   #
+# Mantido enxuto; expandir conforme stack crescer
+############################
+
+# Dependências (front-end futuro)
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# SO / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.history/
+
+# Ambientes / Segredos (não versionar)
+.env
+.env.*
+*.env
+
+# Build / Cache comuns
+dist/
+build/
+.dist
+.cache
+.parcel-cache
+.sass-cache
+.turbo
+.next/
+out/
+coverage/
+.eslintcache
+
+# Ferramentas de deploy (caso use futuramente)
+.vercel
+netlify.toml.local
+
+# Arquivos temporários / backup
+*.swp
+*.tmp
+~$*
+*~
+.#*
+
+# Sistemas Linux / exec
+*.pid
+*.seed
+*.pid.lock
+
+# Evitar ignorar hooks versionados -> não adicionar .githooks aqui
+# (pedido: agora ignorar hooks locais e script de automação)
+.githooks/
+git-auto.sh
+
+# Se adicionar gerador estático (Jekyll / Eleventy / Astro), ajustar depois
+.nojekyll
+
+# Testes (não versionar)
+test.*
+tests/
+*.test.*
+*.spec.*
+
+# Backup local não versionado
+portifolio-backup/

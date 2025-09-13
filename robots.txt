@@ -1,0 +1,15 @@
+# robots.txt para portfólio Wallace Salvador
+# Mais info: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+
+User-agent: *
+# Bloqueia somente versões antigas do currículo (mova versões antigas para /assets/cv/old/)
+Disallow: /assets/cv/old/
+
+# Permite o restante normalmente
+Allow: /
+
+# (Opcional) Se quiser permitir explicitamente o arquivo atual mesmo que mude regra geral futuramente:
+# Allow: /assets/cv/Wallace-Salvador-v1.2-2025-09.pdf
+
+# Sitemap (adicione quando criar):
+# Sitemap: https://codewllc.github.io/portifolio/sitemap.xml
